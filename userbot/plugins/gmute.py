@@ -18,7 +18,7 @@ async def blowjob(event):
         	
         return
     elif event.is_private:
-        await edit_or_reply(event, "`Son can't speak now🤐. Filled mouth with cum`💦")
+        await edit_or_reply(event, "`Son can't speak now🤐. Chup raho bisi 😉`💦")
         await asyncio.sleep(3)
         private = True
     reply = await event.get_reply_message()
@@ -39,7 +39,7 @@ async def blowjob(event):
     except Exception as e:
         await edit_or_reply(event, "Error occured!\nError is " + str(e))
     else:
-        await edit_or_reply(event, "Successfully Fucked this user's mouth.")
+        await edit_or_reply(event, "Successfully chup rah bisi gmuted by ❤️MONU USER BOT ❤️.")
 
 
 @bot.on(admin_cmd(pattern=r"ungmute ?(\d+)?"))
@@ -49,7 +49,7 @@ async def cumshot(event):
     if event.fwd_from:
         return
     elif event.is_private:
-        await edit_or_reply(event, "Today's sex done. Now son can speak✌️🚶")
+        await edit_or_reply(event, " ab bol laude  ungmuted by ❤️ MONU USER BOT ❤️🚶")
         await asyncio.sleep(3)
         private = True
     reply = await event.get_reply_message()
@@ -63,13 +63,13 @@ async def cumshot(event):
         return await edit_or_reply(event, "Please reply to a user or add them into the command to ungmute them.")
     chat_id = event.chat_id
     if not is_muted(userid, "gmute"):
-        return await edit_or_reply(event, "This user can already speak freely✌️😃")
+        return await edit_or_reply(event, "This user can speak ✌️😃")
     try:
         unmute(userid, "gmute")
     except Exception as e:
         await edit_or_reply(event, "Error occured!\nError is " + str(e))
     else:
-        await edit_or_reply(event, "Ok! Today's sex is done now. Son can speak🔥🔥")
+        await edit_or_reply(event, "Ok! Ab bol ghochu . ❤️ MONU USER BOT ❤️")
         
 @command(incoming=True)
 async def watcher(event):
